@@ -1,0 +1,39 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded, sans-serif;
+  font-weight: normal;
+}
+
+body {
+  background-color: transparent;
+}
+
+h1 {
+  margin: 16px 0;
+  border-left: 5px solid #e74c3c;
+  padding-left: 16px;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .group {
+  padding: 6px 10px;
+}
+
+.imgColumn {
+  float: left;
+  width: 7%;
+  padding: 5px;
+}
+
+.imgRow::after {
+  content: '';
+  clear: both;
+  display: table;
+}
